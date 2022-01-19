@@ -1,4 +1,4 @@
-# shopify-frontend-challenge
+# Shopify Frontend Challenge
 
 This repo contains code for Shopify Front-End Challenge required as part of application for Frontend Developer Intern - Summer 2022
 
