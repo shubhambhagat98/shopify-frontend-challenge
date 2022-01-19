@@ -6,23 +6,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content = "IE=edge">
-
-    <%--    bootstrap css --%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-
-
     <title>Shopify-FrontEnd-Challenge</title>
 </head>
 <body>
-
-
-
     <div class="top-banner">
         <h2>Shopify Frontend Challenge</h2>
     </div>
@@ -56,8 +47,6 @@
                </c:forEach>
             </div>
         </div>
-
-
     </section>
 
 
@@ -69,14 +58,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
-
-
                     <div class="modal-image-wrapper">
                         <img id="modal-image" src="" alt="photo"/>
                     </div>
-
-
                     <form>
                         <div class=" row mt-2 mb-2 g-2">
                             <label for="img-link" class="col-form-label">Image Link: <div id="response"></div></label>
@@ -86,7 +70,6 @@
                             <div class="col-2 d-grid px-1">
                                 <button type="button" class="btn btn-light copy-button" onclick="copyLink(this)">Copy</button>
                             </div>
-
                         </div>
                     </form>
                 </div>
@@ -97,14 +80,6 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-    <%--bootstrap cdn javascript file--%>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="JavaScript/shopify.js" ></script>
     <script type="application/javascript">

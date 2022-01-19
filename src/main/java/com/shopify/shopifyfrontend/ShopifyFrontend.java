@@ -16,39 +16,21 @@ import java.nio.charset.StandardCharsets;
 public class ShopifyFrontend extends HttpServlet {
 
     private String apiEndpoint;
-
-
-
     public void init() {
-//        apiEndpoint = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=0qU9TJHziNprdTV1bXaKfLBN0AY0Qc8Aoemvir9K";
         apiEndpoint = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=14&api_key="+System.getenv("NASA_API_KEY");
-        System.out.println(System.getenv("NASA_API_KEY"));
-        System.out.println("init method called");
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         try {
             URL url = new URL(apiEndpoint);
             JSONObject json = new JSONObject(IOUtils.toString(url, StandardCharsets.UTF_8));
-//            System.out.println(json.getClass().getName());
-//            System.out.println(json.getJSONArray("photos"));
-
             JSONArray jsonArray = json.getJSONArray("photos");
-
-//            response.setContentType("application/json");
-//            PrintWriter out = response.getWriter();
-//            out.println(json);
-
             request.setAttribute("photoObject", jsonArray);
             request.getRequestDispatcher("marsrover.jsp").forward(request, response);
-
         }catch (Exception e){
             e.printStackTrace();
         }
-
-
     }
 
     @Override
