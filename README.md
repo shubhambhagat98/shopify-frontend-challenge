@@ -22,7 +22,7 @@ git clone https://github.com/shubhambhagat98/shopify-frontend-challenge.git
 ```
 
 ### Save NASA API Key
-Create your NASA API Key by visiting https://api.nasa.gov/ . Enter your firt name, last name and email id and proceed ahead to get your personal NASA API KEY. Save your NASA API Key to environment variable 
+Create your NASA API Key by visiting https://api.nasa.gov/ . Enter your first name, last name and email id and proceed ahead to get your personal NASA API KEY. Save your NASA API Key to environment variable 
 
 On windows execute following command in the command prompt and restart the command prompt
 ```
