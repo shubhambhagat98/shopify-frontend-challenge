@@ -25,7 +25,7 @@
             </div>
             <div class="row mt-2">
                <c:forEach var="index" begin="0" end="${requestScope.photoObject.length()-1}">
-                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-6 item mb-3 px-4 py-4">
+                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-6 item mb-3 px-md-4 py-md-4">
                        <div class="card h-100 ">
                            <div class="card-image-wrapper">
                                <img class="card-img-top " src="${requestScope.photoObject.getJSONObject(index).getString('img_src')}" alt="Curiosity Rover Image">
